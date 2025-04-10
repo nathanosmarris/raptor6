@@ -1,0 +1,12 @@
+[Unit]
+Description=My rust app (A.R.S.H.I.D.A)
+After=network.target
+
+[Service]
+ExecStart=/root/arsh/target/release/arsh
+Restart=always
+User=
+WorkingDirectory=/root/arsh/target/release
+
+[Install]
+WantedBy=multi-user.target
