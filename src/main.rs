@@ -9,8 +9,8 @@ use chrono::Utc;
 
 // Initialize logging system
 fn init_logging() {
-    let log_dir = "/var/log/arsh";
-    let log_file = "/var/log/arsh/conn.log";
+    let log_dir = "/var/log/raptor6";
+    let log_file = "/var/log/raptor6/connection.log";
 
     // Create log directory if it doesn't exist
     if !Path::new(log_dir).exists() {
@@ -34,7 +34,7 @@ fn log_connection(status: &str, details: &str) {
         "Established" => info!("{}", log_entry),
         "Closed" => warn!("{}", log_entry),
         "Failed" => error!("{}", log_entry),
-        _ => info!("{}", log_entry), // Default case
+        _ => info!("{}", log_entry),
     }
 }
 
@@ -59,9 +59,9 @@ fn handle_client(mut stream: TcpStream) {
 fn main() {
     // Initialize logging
     init_logging();
-
-    let listener = TcpListener::bind("0.0.0.0:6666").expect("Failed to bind to port 6666");
-    println!("Server listening on port 6666...");
+    // Listening on port 12321
+    let listener = TcpListener::bind("0.0.0.0:12321").expect("Failed to bind to port 12321");
+    println!("Server listening on port 12321 ...");
 
     for stream in listener.incoming() {
         match stream {
