@@ -1,7 +1,7 @@
 [package]
-name = "tcp_service"
-version = "1.1.1"
-edition = "2021"
+name = "raptor6"
+version = "1.4.0"
+edition = "2025"
 
 [dependencies]
 log = "0.4"
