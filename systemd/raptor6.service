@@ -1,0 +1,12 @@
+[Unit]
+Description= "Raptor6 Listener & Logger Program"
+After=network.target
+
+[Service]
+ExecStart=/root/arsh/target/release/raptor6
+Restart=always
+User=
+WorkingDirectory=/root/raptor6/target/release
+
+[Install]
+WantedBy=multi-user.target
