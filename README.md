@@ -1,6 +1,6 @@
-# Rust TCP Service
+# Raptor6 Listener & Logger via RUST
 
-A simple TCP server written in Rust that listens on port 12321, echoes back received data, and logs connections to `/var/log/raptor6/connection.log`. It includes professional logging with rotation and readable timestamps.
+A simple TCP server written in Rust that listens on port 12321, echoes back received data, and logs TCP connection details to `/var/log/raptor6/connection.log`. It includes professional logging with rotation and readable timestamps.
 
 ## Features
 - Listens on TCP port 12321.
