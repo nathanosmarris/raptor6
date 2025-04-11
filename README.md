@@ -15,7 +15,7 @@ A simple TCP server written in Rust that listens on port 12321, echoes back rece
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nathanosmarris/raptor6
+   git clone https://github.com/spxd6666/raptor6
 2. Compiling via cargo:
    ```bash
    cd raptor6
